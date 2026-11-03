@@ -1,0 +1,3 @@
+[submodule "ext/sleight-bench"]
+	path = ext/sleight-bench
+	url = https://github.com/safety-research/sleight-bench

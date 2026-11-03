@@ -1,0 +1,33 @@
+# Secrets and local config — never committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Decrypted benchmark data lives only inside the submodule and is ignored there.
+# Belt and braces: never let plaintext transcripts land in this tree either.
+**/transcript.jsonl
+**/benign.jsonl
+**/attack_metadata.parquet
+
+# Raw API response cache (large, regenerable, may contain transcript text)
+.cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
